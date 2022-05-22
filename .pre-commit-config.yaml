@@ -1,0 +1,20 @@
+repos:
+  - repo: 'https://github.com/pre-commit/pre-commit-hooks'
+    rev: v4.2.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-json
+      - id: check-xml
+      - id: check-executables-have-shebangs
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-symlinks
+      - id: detect-private-key
+  - repo: 'https://github.com/hadolint/hadolint'
+    rev: v2.10.0
+    hooks:
+      - id: hadolint
+        args: ['--ignore','DL3018']

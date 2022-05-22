@@ -1,0 +1,2 @@
+#!/bin/ash
+java -Djava.awt.headless=true -splash:no -jar /app/plantuml.jar "$@"
